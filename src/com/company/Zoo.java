@@ -21,5 +21,10 @@ public class Zoo {
 
     }
 
+    public void removePen (Pen pen) {
+        pensArray.remove(pen);
+        System.out.println("Your " + pen + "has been removed");
+    }
+
 
 }

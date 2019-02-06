@@ -26,23 +26,30 @@ public class ZooDemo {
             int MenuChoice = numScanner.nextInt();
             Zoo zoo = new Zoo();
 
-//        List<Pen> newPen1 = new ArrayList<>();
+        List<Pen> newPen1 = new ArrayList<>();
 
 
             switch (MenuChoice) {
 
                 case 1:
 
+                    // need to find out how to name the pen with UserInput
+
                     System.out.println("What is the type of pen? ");
                     String userInput = textScanner.nextLine();
 
-                    Pen myPen = new Pen(userInput);
+                    Pen myPen = new Pen();
                     zoo.addPen(myPen);
 
 
                     break;
 
                 case 2:
+
+                    System.out.println("Which pen would you like to delete?");
+
+                    userInput = textScanner.nextLine();
+                    zoo.removePen(userInput);
                     break;
 
                 case 3:
@@ -57,7 +64,7 @@ public class ZooDemo {
                     String animalGender = textScanner.nextLine();
 
                     Animal newAnimal = new Animal(animalSpecies, animalSize, animalGender);
-                    pen.animalList.add(newAnimal);
+                    myPen.animalList.add(newAnimal);
 
                     break;
 

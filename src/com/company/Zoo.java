@@ -20,14 +20,14 @@ public class Zoo {
 
     }
 
-    public void removePen (Pen pen) {
-        pensArray.remove(pen);
-        System.out.println("Your " + pen + "has been removed");
+    public void removePen (int indexInput) {
+        pensArray.remove(indexInput);
+        System.out.println("Your pen has been removed");
     }
 
     public void viewPens(){
         for (int i = 0; i <pensArray.size() ; i++) {
-            System.out.println("Your current pens are: " + pensArray.get(i).getName());
+            System.out.println( "[" +i +"] " + "Pen: " + pensArray.get(i).getName());
         }
 
 

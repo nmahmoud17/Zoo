@@ -37,16 +37,17 @@ public class ZooDemo {
                     Pen newPen = new Pen(userInput);
                     thePens.addPen(newPen);
 
-                    thePens.viewPens();
-
+                    System.out.println("You just added: " + newPen.getName());
 
                     break;
 
                 case 2:
 
-                    System.out.println("Which pen would you like to delete?");
+                    System.out.println("Enter the number of the pen you would like to delete: \n");
+                    thePens.viewPens();
 
-                    userInput = textScanner.nextLine();
+                    int userIndex = numScanner.nextInt();
+                    thePens.removePen(userIndex);
 
                     break;
 
@@ -106,13 +107,18 @@ public class ZooDemo {
 
             }
 
-            System.out.println("Would you like to go to main menu? ");
+            System.out.println("Would you like to go to main menu? \n" +
+                    "Press [1] Main Menu \n" +
+                    "Press [2] Exit");
             userInput = textScanner.nextLine();
 
             if (userInput.equalsIgnoreCase("1")){
                 running = true;
-            } else {
+            } else if (userInput.equalsIgnoreCase("2")){
                 running = false;
+            }else {
+                System.out.println("Make sure to enter a number: ");
+                running = true;
             }
 
         }while (running);

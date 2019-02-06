@@ -38,7 +38,7 @@ public class ZooDemo {
                     System.out.println("What is the type of pen? ");
                     String userInput = textScanner.nextLine();
 
-                    Pen myPen = new Pen();
+                    Pen myPen = new Pen(userInput);
                     zoo.addPen(myPen);
 
 
@@ -50,6 +50,7 @@ public class ZooDemo {
 
                     userInput = textScanner.nextLine();
                     zoo.removePen(userInput);
+
                     break;
 
                 case 3:

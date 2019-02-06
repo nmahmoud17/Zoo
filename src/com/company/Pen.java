@@ -6,6 +6,19 @@ import java.util.List;
 public class Pen {
     List<Animal> animalList = new ArrayList<>();
     List<BabyAnimal> babyAnimalList = new ArrayList<>();
+    String name;
+
+    public Pen (String name){
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public List<Animal> getAnimalList() {
         return animalList;

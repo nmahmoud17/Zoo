@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ZooDemo {
@@ -13,6 +11,7 @@ public class ZooDemo {
         boolean running;
         String userInput;
         Zoo thePens = new Zoo();
+//        Pen newPen = new Pen();
 
 
         do {
@@ -33,11 +32,10 @@ public class ZooDemo {
 
                     System.out.println("What is the type of pen? ");
                     userInput = textScanner.nextLine();
-
                     Pen newPen = new Pen(userInput);
                     thePens.addPen(newPen);
 
-                    System.out.println("You just added: " + newPen.getName());
+                    System.out.println("You just added: " + newPen.getName() + "\n");
 
                     break;
 
@@ -52,10 +50,7 @@ public class ZooDemo {
                     break;
 
                 case 3:
-                    System.out.println("Pen name: ");
-                    userInput = textScanner.nextLine();
 
-                    Pen existingPen = new Pen(userInput);
 
                     System.out.println("What is the animal's species?");
                     String animalSpecies = textScanner.nextLine();
@@ -69,6 +64,18 @@ public class ZooDemo {
 
                     Animal newAnimal = new Animal(animalSpecies, animalSize, animalGender);
 
+                    System.out.println("Which pen should this animal be added to?\n");
+                    thePens.viewPens();
+
+                    int userPenSelection = numScanner.nextInt();
+//                    newPen.getAnimalList().add(newAnimal);
+
+                    thePens.getPensArray().get(userPenSelection).getAnimalList().add(newAnimal);
+
+
+                    System.out.println(animalSpecies + " has been added to your pen");
+
+                    thePens.viewAnimalsInPens();
 
                     break;
 
@@ -87,7 +94,20 @@ public class ZooDemo {
                     String babyAnimalAge = textScanner.nextLine();
 
                     BabyAnimal newBabyAnimal = new BabyAnimal(babyAnimalSpecies, babyAnimalSize, babyAnimalGender, babyAnimalAge);
-//                    newPen.babyAnimalList.add(newBabyAnimal);
+
+                    System.out.println("Which pen should this animal be added to?\n");
+                    thePens.viewPens();
+
+                    userPenSelection = numScanner.nextInt();
+
+                    //add to specific pen based on index number entered
+                    thePens.getPensArray().get(userPenSelection).getBabyAnimalList().add(newBabyAnimal);
+
+
+                    System.out.println(babyAnimalSpecies + " has been added to your pen");
+
+                    thePens.viewBabyAnimalsInPens();
+
 
                     break;
 
@@ -97,7 +117,7 @@ public class ZooDemo {
 
                 case 6: //display all animals in pen
 
-                    thePens.viewAnimalsinPens();
+                    thePens.viewAnimalsInPens();
 
                     break;
 

@@ -56,7 +56,7 @@ public class ZooDemo {
                 break;
 
             case 3:
-                System.out.println("What is the animal species?");
+                System.out.println("What is the animal's species?");
                 String animalSpecies = textScanner.nextLine();
 
                 System.out.println("What is the animal's size?");
@@ -72,6 +72,22 @@ public class ZooDemo {
                 break;
 
             case 4:
+                System.out.println("What is the baby animal's species?");
+                String babyAnimalSpecies = textScanner.nextLine();
+
+                System.out.println("What is the baby animal's size?");
+                String babyAnimalSize = textScanner.nextLine();
+
+
+                System.out.println("What is the baby animal's gender?");
+                String babyAnimalGender = textScanner.nextLine();
+
+                System.out.println("What is the baby animal's age?");
+                String babyAnimalAge = textScanner.nextLine();
+
+                BabyAnimal newBabyAnimal = new BabyAnimal(babyAnimalSpecies, babyAnimalSize, babyAnimalGender, babyAnimalAge);
+                pen.babyAnimalList.add(newBabyAnimal);
+
                 break;
 
             case 5:

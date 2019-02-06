@@ -10,6 +10,9 @@ public class Pen {
 
     public Pen (String name){
         this.name = name;
+        this.animalList = getAnimalList();
+        this.babyAnimalList = getBabyAnimalList();
+
     }
 
     public String getName() {

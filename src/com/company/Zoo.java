@@ -17,7 +17,6 @@ public class Zoo {
 
     public void addPen (Pen pen) {
         pensArray.add(pen);
-        System.out.println("New pen: "+ pen);
 
     }
 
@@ -28,7 +27,7 @@ public class Zoo {
 
     public void viewPens(){
         for (int i = 0; i <pensArray.size() ; i++) {
-            System.out.println(pensArray.get(i));
+            System.out.println("Your current pens are: " + pensArray.get(i).getName());
         }
 
 

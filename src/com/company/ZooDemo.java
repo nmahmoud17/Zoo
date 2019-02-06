@@ -10,7 +10,9 @@ public class ZooDemo {
 
         Scanner numScanner = new Scanner(System.in);
         Scanner textScanner = new Scanner(System.in);
-        boolean running = false;
+        boolean running;
+        String userInput;
+        Zoo thePens = new Zoo();
 
 
         do {
@@ -24,20 +26,18 @@ public class ZooDemo {
                     "Press [7] Display all Animals in the Zoo");
 
             int MenuChoice = numScanner.nextInt();
-            Zoo zoo = new Zoo();
-
-//        List<Pen> newPen1 = new ArrayList<>();
-
 
             switch (MenuChoice) {
 
                 case 1:
 
                     System.out.println("What is the type of pen? ");
-                    String userInput = textScanner.nextLine();
+                    userInput = textScanner.nextLine();
 
-                    Pen myPen = new Pen(userInput);
-                    zoo.addPen(myPen);
+                    Pen newPen = new Pen(userInput);
+                    thePens.addPen(newPen);
+
+                    thePens.viewPens();
 
 
                     break;
@@ -47,7 +47,6 @@ public class ZooDemo {
                     System.out.println("Which pen would you like to delete?");
 
                     userInput = textScanner.nextLine();
-                    zoo.removePen();
 
                     break;
 
@@ -87,7 +86,7 @@ public class ZooDemo {
                     String babyAnimalAge = textScanner.nextLine();
 
                     BabyAnimal newBabyAnimal = new BabyAnimal(babyAnimalSpecies, babyAnimalSize, babyAnimalGender, babyAnimalAge);
-                    myPen.babyAnimalList.add(newBabyAnimal);
+//                    newPen.babyAnimalList.add(newBabyAnimal);
 
                     break;
 
@@ -97,7 +96,7 @@ public class ZooDemo {
 
                 case 6: //display all animals in pen
 
-                    zoo.viewAnimalsinPens();
+                    thePens.viewAnimalsinPens();
 
                     break;
 
@@ -106,6 +105,16 @@ public class ZooDemo {
 
 
             }
+
+            System.out.println("Would you like to go to main menu? ");
+            userInput = textScanner.nextLine();
+
+            if (userInput.equalsIgnoreCase("1")){
+                running = true;
+            } else {
+                running = false;
+            }
+
         }while (running);
 
 

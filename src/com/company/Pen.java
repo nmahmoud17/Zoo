@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pen {
-    List<Animal> animalList = new ArrayList<>();
-    List<BabyAnimal> babyAnimalList = new ArrayList<>();
-    String name;
+    private List<Animal> animalList = new ArrayList<>();
+    private List<BabyAnimal> babyAnimalList = new ArrayList<>();
+    private String name;
 
     public Pen (String name){
         this.name = name;

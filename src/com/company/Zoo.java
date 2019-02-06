@@ -26,5 +26,21 @@ public class Zoo {
         System.out.println("Your " + pen + "has been removed");
     }
 
+    public void viewPens(){
+        for (int i = 0; i <pensArray.size() ; i++) {
+            System.out.println(pensArray.get(i));
+        }
+
+
+        }
+
+    public void viewAnimalsinPens(){
+        for (int i = 0; i <pensArray.size() ; i++) {
+            System.out.println(pensArray.get(i).getAnimalList());
+            System.out.println(pensArray.get(i).getBabyAnimalList());
+
+        }
+    }
+
 
 }

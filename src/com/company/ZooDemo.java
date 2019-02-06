@@ -26,14 +26,12 @@ public class ZooDemo {
             int MenuChoice = numScanner.nextInt();
             Zoo zoo = new Zoo();
 
-        List<Pen> newPen1 = new ArrayList<>();
+//        List<Pen> newPen1 = new ArrayList<>();
 
 
             switch (MenuChoice) {
 
                 case 1:
-
-                    // need to find out how to name the pen with UserInput
 
                     System.out.println("What is the type of pen? ");
                     String userInput = textScanner.nextLine();
@@ -49,11 +47,16 @@ public class ZooDemo {
                     System.out.println("Which pen would you like to delete?");
 
                     userInput = textScanner.nextLine();
-                    zoo.removePen(userInput);
+                    zoo.removePen();
 
                     break;
 
                 case 3:
+                    System.out.println("Pen name: ");
+                    userInput = textScanner.nextLine();
+
+                    Pen existingPen = new Pen(userInput);
+
                     System.out.println("What is the animal's species?");
                     String animalSpecies = textScanner.nextLine();
 
@@ -65,7 +68,7 @@ public class ZooDemo {
                     String animalGender = textScanner.nextLine();
 
                     Animal newAnimal = new Animal(animalSpecies, animalSize, animalGender);
-                    myPen.animalList.add(newAnimal);
+
 
                     break;
 
@@ -84,7 +87,7 @@ public class ZooDemo {
                     String babyAnimalAge = textScanner.nextLine();
 
                     BabyAnimal newBabyAnimal = new BabyAnimal(babyAnimalSpecies, babyAnimalSize, babyAnimalGender, babyAnimalAge);
-                    pen.babyAnimalList.add(newBabyAnimal);
+                    myPen.babyAnimalList.add(newBabyAnimal);
 
                     break;
 
@@ -94,11 +97,8 @@ public class ZooDemo {
 
                 case 6: //display all animals in pen
 
-                    for (Pen allBigAnimals : newPen)
-                        System.out.println(allBigAnimals.getBabyAnimalList());
+                    zoo.viewAnimalsinPens();
 
-                    for (Pen allBabyAnimals : newPen)
-                        System.out.println(allBabyAnimals.getBabyAnimalList());
                     break;
 
                 case 7:

@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ZooDemo {
@@ -8,10 +10,8 @@ public class ZooDemo {
 
         Scanner numScanner = new Scanner(System.in);
         Scanner textScanner = new Scanner(System.in);
-        Pen myPen = new Pen();
 
-
-        System.out.println("Welcome ZooKeeper, what would you like to do? \n" +
+        System.out.println("Welcome ZooKeeper, what would you like to do? \n \n" +
                 "Press [1] Set up a new Pen \n" +
                 "Press [2] Remove a Pen \n" +
                 "Press [3] Add animals to pen \n" +
@@ -21,16 +21,54 @@ public class ZooDemo {
                 "Press [7] Display all Animals in the Zoo");
 
         int MenuChoice = numScanner.nextInt();
+        Pen pen = new Pen();
+        Zoo zoo = new Zoo();
 
         switch(MenuChoice) {
 
             case 1:
+
+                System.out.println("Please enter the type of pen you would like to create: \n" +
+                        "Press [1] for large Animals \n" +
+                        "Press [2] for baby Animals \n");
+
+                int menuChoice2 = numScanner.nextInt();
+                switch (menuChoice2) {
+
+                    case 1:
+
+                        pen.getAnimalList();
+
+
+
+                        break;
+
+                    case 2:
+
+                        pen.getBabyAnimalList();
+                        break;
+
+                }
+
                 break;
 
             case 2:
                 break;
 
             case 3:
+                System.out.println("What is the animal species?");
+                String animalSpecies = textScanner.nextLine();
+
+                System.out.println("What is the animal's size?");
+                String animalSize = textScanner.nextLine();
+
+
+                System.out.println("What is the animal's gender?");
+                String animalGender = textScanner.nextLine();
+
+                Animal newAnimal = new Animal(animalSpecies, animalSize, animalGender);
+                pen.animalList.add(newAnimal);
+
                 break;
 
             case 4:

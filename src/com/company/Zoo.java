@@ -15,5 +15,11 @@ public class Zoo {
         this.pensArray = pensArray;
     }
 
+    public void addPen (Pen pen) {
+        pensArray.add(pen);
+        System.out.println("New pen: "+ pen);
+
+    }
+
 
 }

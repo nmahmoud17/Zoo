@@ -22,15 +22,29 @@ public class Pen {
 
     }
 
+
     public void addToBabyAnimalsArray (BabyAnimal babyAnimal) {
         babyAnimalList.add(babyAnimal);
     }
 
+
+    public void removeAnimal(int userInput) {
+        for (int i = 0; i <animalList.size(); i++) {
+            animalList.remove(userInput);
+        }
+    }
+
+
     public void printAnimalArray() {
         for (int i = 0; i < animalList.size(); i++) {
-            System.out.println("Animal: "+"["+i+"]\n"  + "Species:" + animalList.get(i).getSpecies() + "\n"
-            + "Size: " + animalList.get(i).getSize() + "\n" +
-                    "Gender: " + animalList.get(i).getGender());
+
+            if (animalList.isEmpty()) {
+                System.out.println("There are no animals in this pen");}
+            else {
+                System.out.println("Animal: " + "[" + i + "]\n" + "Species:" + animalList.get(i).getSpecies() + "\n"
+                        + "Size: " + animalList.get(i).getSize() + "\n" +
+                        "Gender: " + animalList.get(i).getGender());
+            }
         }
     }
 

@@ -13,13 +13,15 @@ public class ZooDemo {
         Zoo thePens = new Zoo();
 //        Pen newPen = new Pen();
 
+        System.out.println("Welcome ZooKeeper, what would you like to do? \n \n");
+
 
         do {
-            System.out.println("Welcome ZooKeeper, what would you like to do? \n \n" +
+            System.out.println("Main Menu: \n" +
                     "Press [1] Set up a new Pen \n" +
                     "Press [2] Remove a Pen \n" +
                     "Press [3] Add animals to pen \n" +
-                    "Press [4] Add baby animals to pen \n" +
+                    "Press [4] Add BABY animals to pen \n" +
                     "Press [5] Remove Animals and Baby Animals \n" +
                     "Press [6] Display all the Animals in a Pen \n" +
                     "Press [7] Display all Animals in the Zoo");
@@ -51,6 +53,10 @@ public class ZooDemo {
 
                 case 3:
 
+                    System.out.println("Which pen should this big animal be added to?\n");
+                    thePens.viewPens();
+
+                    int userPenSelection = numScanner.nextInt();
 
                     System.out.println("What is the animal's species?");
                     String animalSpecies = textScanner.nextLine();
@@ -64,22 +70,19 @@ public class ZooDemo {
 
                     Animal newAnimal = new Animal(animalSpecies, animalSize, animalGender);
 
-                    System.out.println("Which pen should this animal be added to?\n");
-                    thePens.viewPens();
-
-                    int userPenSelection = numScanner.nextInt();
-//                    newPen.getAnimalList().add(newAnimal);
-
-                    thePens.getPensArray().get(userPenSelection).getAnimalList().add(newAnimal);
-
-
-                    System.out.println(animalSpecies + " has been added to your pen");
+                    thePens.getPensArray().get(userPenSelection).addToAnimalsArray(newAnimal);
+                    System.out.println(animalSpecies + " has been added to your pen \n");
 
                     thePens.viewAnimalsInPens();
 
                     break;
 
                 case 4:
+                    System.out.println("Which pen should this baby animal be added to?\n");
+                    thePens.viewPens();
+
+                    userPenSelection = numScanner.nextInt();
+
                     System.out.println("What is the baby animal's species?");
                     String babyAnimalSpecies = textScanner.nextLine();
 
@@ -95,23 +98,35 @@ public class ZooDemo {
 
                     BabyAnimal newBabyAnimal = new BabyAnimal(babyAnimalSpecies, babyAnimalSize, babyAnimalGender, babyAnimalAge);
 
-                    System.out.println("Which pen should this animal be added to?\n");
-                    thePens.viewPens();
 
-                    userPenSelection = numScanner.nextInt();
-
-                    //add to specific pen based on index number entered
-                    thePens.getPensArray().get(userPenSelection).getBabyAnimalList().add(newBabyAnimal);
-
-
-                    System.out.println(babyAnimalSpecies + " has been added to your pen");
+                    thePens.getPensArray().get(userPenSelection).addToBabyAnimalsArray(newBabyAnimal);
 
                     thePens.viewBabyAnimalsInPens();
-
 
                     break;
 
                 case 5:
+
+                    System.out.println("Would you like to remove an animal or Baby animal? \n" +
+                            "Press [1] Animal \n" +
+                            "Press [2] Baby Animal");
+
+                    int menuChoice = textScanner.nextInt();
+
+                    switch (menuChoice) {
+                        case 1:
+                            System.out.println("Enter the number of the animal you would like to remove: ");
+                            thePens.viewAnimalsInPens();
+
+                            userIndex = numScanner.nextInt();
+
+                            thePens.removeAnimal(userIndex);
+
+                            break;
+                        case 2:
+
+                            break;
+                    }
 
                     break;
 

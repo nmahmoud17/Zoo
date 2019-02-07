@@ -34,20 +34,29 @@ public class Zoo {
 
     }
 
+    //need to figure out how to not print if no animals
+
     public void viewAnimalsInPens() {
         for (int i = 0; i < pensArray.size(); i++) {
-            if (pensArray.get(i).getAnimalList().isEmpty()) {
-                System.out.println("No animals");
+            if (!pensArray.isEmpty()) {
+                pensArray.get(i).printAnimalArray();
+            } else {
+                System.out.println("No animals here!");
             }
-            System.out.println(pensArray.get(i).getAnimalList().get(i).getSpecies());
+        }
+    }
 
+    public void removeAnimal(int userInput) {
+        for (int i = 0; i < pensArray.size() ; i++) {
+            pensArray.get(i).removeAnimal(userInput);
         }
     }
 
     public void viewBabyAnimalsInPens() {
 
         for (int i = 0; i < pensArray.size(); i++) {
-            System.out.println(pensArray.get(i).getBabyAnimalList().get(i).getSpecies());
+            System.out.println("Here are your baby animals in the pen: \n");
+            pensArray.get(i).printBabyAnimalArray();
             break;
         }
     }

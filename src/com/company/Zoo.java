@@ -2,10 +2,10 @@ package com.company;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 
 public class Zoo {
+
     private List<Pen> pensArray = new ArrayList<>();
 
     public List<Pen> getPensArray() {
@@ -38,10 +38,14 @@ public class Zoo {
 
     public void viewAnimalsInPens() {
         for (int i = 0; i < pensArray.size(); i++) {
-            if (!pensArray.isEmpty()) {
-                pensArray.get(i).printAnimalArray();
+            if (pensArray.isEmpty()) {
+                System.out.println("No big animals here!");
             } else {
-                System.out.println("No animals here!");
+                System.out.println("Big Pen Name " + pensArray.get(i).getName());
+                pensArray.get(i).printAnimalArray();
+                System.out.println('\n');
+
+
             }
         }
     }
@@ -56,10 +60,26 @@ public class Zoo {
 
         for (int i = 0; i < pensArray.size(); i++) {
             System.out.println("Here are your baby animals in the pen: \n");
-            pensArray.get(i).printBabyAnimalArray();
+
+            if(pensArray.isEmpty()) {
+                System.out.println("No animals");
+            } else {
+                System.out.println("Pen name: " + pensArray.get(i).getName());
+                pensArray.get(i).printBabyAnimalArray();
+                System.out.println('\n');
+
+            }
             break;
         }
     }
+
+    public void removeBabyAnimal(int userInput) {
+        for (int i = 0; i <pensArray.size() ; i++) {
+            pensArray.get(i).removeBabyAnimal(userInput);
+
+        }
+    }
+
 
 }
 

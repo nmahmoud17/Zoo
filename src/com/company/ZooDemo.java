@@ -1,5 +1,6 @@
 package com.company;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ZooDemo {
@@ -123,7 +124,16 @@ public class ZooDemo {
                             thePens.removeAnimal(userIndex);
 
                             break;
+
                         case 2:
+
+                            System.out.println("Enter the number of the baby animal you'd like to remove from pen: ");
+                            thePens.viewBabyAnimalsInPens();
+
+                            userIndex = numScanner.nextInt();
+
+                            thePens.removeBabyAnimal(userIndex);
+
 
                             break;
                     }
@@ -136,7 +146,7 @@ public class ZooDemo {
 
                     break;
 
-                case 7:
+                case 7: //display all animals in zoo
                     break;
 
 

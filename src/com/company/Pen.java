@@ -34,6 +34,12 @@ public class Pen {
         }
     }
 
+    public void removeBabyAnimal(int userInput) {
+        for (int i =0; i <animalList.size(); i++) {
+            babyAnimalList.remove(userInput);
+        }
+    }
+
 
     public void printAnimalArray() {
         for (int i = 0; i < animalList.size(); i++) {
@@ -43,16 +49,21 @@ public class Pen {
             else {
                 System.out.println("Animal: " + "[" + i + "]\n" + "Species:" + animalList.get(i).getSpecies() + "\n"
                         + "Size: " + animalList.get(i).getSize() + "\n" +
-                        "Gender: " + animalList.get(i).getGender());
+                        "Gender: " + animalList.get(i).getGender() +"\n");
             }
         }
     }
 
     public void printBabyAnimalArray() {
         for (int i = 0; i < babyAnimalList.size(); i++) {
+
+            if (babyAnimalList.isEmpty()) {
+                System.out.println("There are no baby animals here!");
+            }
             System.out.println("Animal: " + "[" + i + "]\n" + "Species:" + babyAnimalList.get(i).getSpecies() + "\n"
                     + "Size: " + babyAnimalList.get(i).getSize() + "\n" +
-                    "Gender: " + babyAnimalList.get(i).getGender());
+                    "Gender: " + babyAnimalList.get(i).getGender() + "\n");
+
         }
     }
 

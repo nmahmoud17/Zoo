@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56b4efaf-26b1-4211-9d83-ff0886f02cf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZooAssesment/com/company/Pen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZooAssesment/com/company/Pen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZooAssesment/com/company/Zoo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZooAssesment/com/company/Zoo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZooAssesment/com/company/ZooDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZooAssesment/com/company/ZooDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Pen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Pen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Zoo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ZooDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ZooDemo.java" afterDir="false" />
@@ -22,8 +18,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/ZooDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="120" column="34" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="34" />
+            <state relative-caret-position="236">
+              <caret line="134" column="64" selection-start-line="134" selection-start-column="64" selection-end-line="134" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,12 +30,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Zoo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
+            <state relative-caret-position="220">
+              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#184#185#0" expanded="true" />
                 <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,18 +46,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Pen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="184">
+              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#472#473#0" expanded="true" />
                 <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#1624#1625#0" expanded="true" />
-                <element signature="e#1696#1697#0" expanded="true" />
-                <element signature="e#1772#1773#0" expanded="true" />
-                <element signature="e#1874#1875#0" expanded="true" />
-                <element signature="e#1962#1963#0" expanded="true" />
-                <element signature="e#2084#2085#0" expanded="true" />
+                <element signature="e#1919#1920#0" expanded="true" />
+                <element signature="e#1991#1992#0" expanded="true" />
+                <element signature="e#2067#2068#0" expanded="true" />
+                <element signature="e#2169#2170#0" expanded="true" />
+                <element signature="e#2257#2258#0" expanded="true" />
+                <element signature="e#2379#2380#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="424" />
     <option name="y" value="23" />
     <option name="width" value="1008" />
@@ -121,7 +122,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549497528907" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549834449000" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -164,15 +165,15 @@
       <updated>1549463807792</updated>
       <workItem from="1549463808983" duration="8639000" />
       <workItem from="1549472805696" duration="166000" />
-      <workItem from="1549480281704" duration="15027000" />
+      <workItem from="1549480281704" duration="18791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23832000" />
+    <option name="totallyTimeSpent" value="27596000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="424" y="23" width="1008" height="872" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24902217" />
@@ -184,7 +185,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32564104" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32522407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -248,13 +249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/BabyAnimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -262,39 +256,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/ZooDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/BabyAnimal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="120" column="34" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="34" />
+        <state relative-caret-position="195">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Pen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        <state relative-caret-position="184">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#472#473#0" expanded="true" />
             <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#1624#1625#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
-            <element signature="e#1962#1963#0" expanded="true" />
-            <element signature="e#2084#2085#0" expanded="true" />
+            <element signature="e#1919#1920#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2379#2380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/ZooDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="134" column="64" selection-start-line="134" selection-start-column="64" selection-end-line="134" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Zoo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
+        <state relative-caret-position="220">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#184#185#0" expanded="true" />
             <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
